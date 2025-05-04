@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #eef6fb;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* —— Header —— */
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 7rem;
+  text-align: center;
+  background: linear-gradient(90deg, #6ac1e8, #4a90e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+/* —— Add Form —— */
+.add-form {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.add-form input,
+.add-form select {
+  flex: 1;
+  padding: 1.2rem 1.6rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.add-form button {
+  padding: 1.2rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #4a90e2, #6ac1e8);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.add-form button:hover {
+  transform: scale(1.05);
+}
+
+/* —— Steps & Counts Controls —— */
+.steps,
+.counts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.steps button,
+.counts button {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.steps button:hover,
+.counts button:hover {
+  background: #e0f2fe;
+}
+
+.steps p,
+.counts p {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* —— Items List —— */
+.list {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.list ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1rem;
+  background: #f4f9fd;
+  border-radius: 12px;
+  font-size: 1.8rem;
+}
+
+.list li input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  accent-color: #4a90e2;
+  cursor: pointer;
+}
+
+.list li button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #f44336;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.list li button:hover {
+  transform: scale(1.2);
+}
+
+/* —— Actions & Stats —— */
+.actions {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.actions button,
+.list select {
+  padding: 1rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #4a90e2, #6ac1e8);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.actions button:hover,
+.list select:hover {
+  opacity: 0.8;
+}
+
+.stats {
+  background: linear-gradient(135deg, #6ac1e8, #4a90e2);
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
