@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../App.css";
+import "./App.css";
 import Logo from "./Components/Logo.jsx";
 import Form from "./Components/Form.jsx";
 import PackList from "./Components/PackList.jsx";
